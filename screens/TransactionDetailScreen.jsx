@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   categoryValue: {
-    fontSize: 28, // Larger font for the category value
+    fontSize: 28, 
     fontWeight: 'bold',
     color: '#007BFF',
     marginTop: 5,
