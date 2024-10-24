@@ -139,31 +139,31 @@ export default function SummaryScreen() {
               yAxisLabel="$"
               fromZero={true} // Ensures the chart starts at zero
               chartConfig={{
-                backgroundColor: '#FFFFFF', // White background
+                backgroundColor: '#FFFFFF', 
                 backgroundGradientFrom: '#FFFFFF',
                 backgroundGradientTo: '#FFFFFF',
                 decimalPlaces: 2, // Show values with two decimal places
-                color: (opacity = 1) => `rgba(34, 150, 243, ${opacity})`, // Blue for bar labels
-                labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`, // Black labels
-                barColors: ['#FF6F61', '#6A0572', '#F7D716', '#2AB7CA'], // Vibrant colors for each bar
-                barBorderRadius: 10, // Rounded bars
+                color: (opacity = 1) => `rgba(34, 150, 243, ${opacity})`,
+                labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`, 
+                barColors: ['#FF6F61', '#6A0572', '#F7D716', '#2AB7CA'],
+                barBorderRadius: 10,
                 propsForBars: {
-                  strokeWidth: 2, // Bar borders
-                  stroke: '#000000', // Black border
+                  strokeWidth: 2, 
+                  stroke: '#000000',
                   shadowColor: '#000000',
                   shadowOffset: { width: 2, height: 3 },
                   shadowOpacity: 0.6,
-                  shadowRadius: 3, // Drop shadow effect for bars
+                  shadowRadius: 3,
                 },
                 style: {
                   borderRadius: 16,
                 },
                 propsForBackgroundLines: {
-                  strokeDasharray: '', // Solid grid lines
-                  stroke: '#DDDDDD', // Light grey grid lines
+                  strokeDasharray: '', 
+                  stroke: '#DDDDDD', 
                 },
               }}
-              verticalLabelRotation={30} // Rotates the labels to avoid overlap
+              verticalLabelRotation={30} 
             />
           </View>
 
@@ -198,12 +198,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 20,
-    width: '100%', // Adjust to your preference
-    alignSelf: 'center', // Centers the picker horizontally
+    width: '100%',
+    alignSelf: 'center', 
   },
   picker: {
     width: '34%',
-    height: 50, // You can also adjust the height if needed
+    height: 50,
   },
   noDataText: {
     fontSize: 18,
@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 2, height: 3 },
     shadowOpacity: 0.3,
     shadowRadius: 5,
-    elevation: 5, // Elevation for Android shadow
+    elevation: 5, 
   },
   totalContainer: {
     marginTop: 20,
